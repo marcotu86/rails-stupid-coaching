@@ -1,3 +1,13 @@
-<p><%= @message %></p>
 
-<p><%= @answer %></p>
+<div class="container mt-5">
+ <div class="card">
+    <div class="card-body">
+      <h1>Your message</h1>
+      <p><%= @message %></p>
+      <h1>Coach's answer</h1>
+      <p><%= @answer %></p>
+    </div>
+  </div>
+    <%= link_to "Ask a new question",  ask_path, class: "btn btn-success mt-3" %>
+
+</div>
